@@ -99,23 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hamburger { display: none; cursor: pointer; }
 
-.hamburger {
-    display: none;
-    font-size: 1.6rem;
-    color: var(--primary-green);
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
 
-.hamburger i {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.hamburger.active i {
-    transform: rotate(90deg);
-}
 
 /* Hero Section */
 .hero {
@@ -637,7 +621,9 @@ section { padding: 100px 0; }
 
 @media screen and (max-width: 768px) {
     .hamburger { display: block; }
-
+    .hamburger.active .bar:nth-child(2) { opacity: 0; }
+    .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -667,7 +653,7 @@ section { padding: 100px 0; }
 
     .hero {
         background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                    url('img/mobile.webp');
+                    url('img/hero\ -mobile.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
