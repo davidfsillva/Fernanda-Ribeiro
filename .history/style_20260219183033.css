@@ -673,8 +673,8 @@ section { padding: 100px 0; }
     }
 
         .hero h1,
-        .hero p {
-            text-shadow: 
+    .hero p {
+        text-shadow: 
             0 2px 6px rgba(0, 0, 0, 0.6);
     }
 }
