@@ -658,7 +658,7 @@ section { padding: 100px 0; }
     .footer-bottom { flex-direction: column; text-align: center; gap: 1rem; }
     .footer-bottom-links { justify-content: center; }
 
-    .hero {
+        .hero {
         background-attachment: scroll;
     }
 }
